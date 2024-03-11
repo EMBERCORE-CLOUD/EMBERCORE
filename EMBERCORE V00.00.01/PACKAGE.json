@@ -1,0 +1,30 @@
+{
+  "main": "/APP-SOURCECODE/INDEX.html",
+  "name": "embercore",
+  "description": "EMBERCORE SOFTWARE SUITE",
+  "version": "00.00.01",
+  "keywords": [ "EMBER", "EMBERCORE" ],
+
+  "window": {
+    "title": "EMBERCORE",
+    "icon": "FAVICON.png",
+    "position": "center",
+    "toolbar": false,
+    "frame": false,
+    "transparent": true,
+    "resizable": false,
+
+    "width": 800,
+    "min_width": 800,
+    "max_width": 800,
+
+    "height": 500,
+    "min_height": 500,
+    "max_height": 500
+  },
+
+  "webkit": {
+    "plugin": true
+  }
+
+}

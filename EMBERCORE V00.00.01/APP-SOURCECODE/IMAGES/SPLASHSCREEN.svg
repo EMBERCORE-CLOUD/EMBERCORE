@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; background: none; display: block; shape-rendering: auto; animation-play-state: running; animation-delay: 0s;" width="203px" height="203px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+<rect x="3" y="3" width="22" height="22" fill="#ffffff" style="animation-play-state: running; animation-delay: 0s;">
+  <animate attributeName="fill" values="#00afff;#ffffff;#ffffff" keyTimes="0;0.08333333333333333;1" dur="1.2195121951219512s" repeatCount="indefinite" begin="0s" calcMode="discrete" style="animation-play-state: running; animation-delay: 0s;"></animate>
+</rect><rect x="27" y="3" width="22" height="22" fill="#ffffff" style="animation-play-state: running; animation-delay: 0s;">
+  <animate attributeName="fill" values="#00afff;#ffffff;#ffffff" keyTimes="0;0.08333333333333333;1" dur="1.2195121951219512s" repeatCount="indefinite" begin="0.1016260162601626s" calcMode="discrete" style="animation-play-state: running; animation-delay: 0s;"></animate>
+</rect><rect x="51" y="3" width="22" height="22" fill="#ffffff" style="animation-play-state: running; animation-delay: 0s;">
+  <animate attributeName="fill" values="#00afff;#ffffff;#ffffff" keyTimes="0;0.08333333333333333;1" dur="1.2195121951219512s" repeatCount="indefinite" begin="0.2032520325203252s" calcMode="discrete" style="animation-play-state: running; animation-delay: 0s;"></animate>
+</rect><rect x="75" y="3" width="22" height="22" fill="#ffffff" style="animation-play-state: running; animation-delay: 0s;">
+  <animate attributeName="fill" values="#00afff;#ffffff;#ffffff" keyTimes="0;0.08333333333333333;1" dur="1.2195121951219512s" repeatCount="indefinite" begin="0.3048780487804878s" calcMode="discrete" style="animation-play-state: running; animation-delay: 0s;"></animate>
+</rect><rect x="3" y="27" width="22" height="22" fill="#ffffff" style="animation-play-state: running; animation-delay: 0s;">
+  <animate attributeName="fill" values="#00afff;#ffffff;#ffffff" keyTimes="0;0.08333333333333333;1" dur="1.2195121951219512s" repeatCount="indefinite" begin="1.1178861788617886s" calcMode="discrete" style="animation-play-state: running; animation-delay: 0s;"></animate>
+</rect><rect x="75" y="27" width="22" height="22" fill="#ffffff" style="animation-play-state: running; animation-delay: 0s;">
+  <animate attributeName="fill" values="#00afff;#ffffff;#ffffff" keyTimes="0;0.08333333333333333;1" dur="1.2195121951219512s" repeatCount="indefinite" begin="0.4065040650406504s" calcMode="discrete" style="animation-play-state: running; animation-delay: 0s;"></animate>
+</rect><rect x="3" y="51" width="22" height="22" fill="#ffffff" style="animation-play-state: running; animation-delay: 0s;">
+  <animate attributeName="fill" values="#00afff;#ffffff;#ffffff" keyTimes="0;0.08333333333333333;1" dur="1.2195121951219512s" repeatCount="indefinite" begin="1.016260162601626s" calcMode="discrete" style="animation-play-state: running; animation-delay: 0s;"></animate>
+</rect><rect x="75" y="51" width="22" height="22" fill="#ffffff" style="animation-play-state: running; animation-delay: 0s;">
+  <animate attributeName="fill" values="#00afff;#ffffff;#ffffff" keyTimes="0;0.08333333333333333;1" dur="1.2195121951219512s" repeatCount="indefinite" begin="0.508130081300813s" calcMode="discrete" style="animation-play-state: running; animation-delay: 0s;"></animate>
+</rect><rect x="3" y="75" width="22" height="22" fill="#ffffff" style="animation-play-state: running; animation-delay: 0s;">
+  <animate attributeName="fill" values="#00afff;#ffffff;#ffffff" keyTimes="0;0.08333333333333333;1" dur="1.2195121951219512s" repeatCount="indefinite" begin="0.9146341463414634s" calcMode="discrete" style="animation-play-state: running; animation-delay: 0s;"></animate>
+</rect><rect x="27" y="75" width="22" height="22" fill="#ffffff" style="animation-play-state: running; animation-delay: 0s;">
+  <animate attributeName="fill" values="#00afff;#ffffff;#ffffff" keyTimes="0;0.08333333333333333;1" dur="1.2195121951219512s" repeatCount="indefinite" begin="0.8130081300813008s" calcMode="discrete" style="animation-play-state: running; animation-delay: 0s;"></animate>
+</rect><rect x="51" y="75" width="22" height="22" fill="#ffffff" style="animation-play-state: running; animation-delay: 0s;">
+  <animate attributeName="fill" values="#00afff;#ffffff;#ffffff" keyTimes="0;0.08333333333333333;1" dur="1.2195121951219512s" repeatCount="indefinite" begin="0.7113821138211383s" calcMode="discrete" style="animation-play-state: running; animation-delay: 0s;"></animate>
+</rect><rect x="75" y="75" width="22" height="22" fill="#ffffff" style="animation-play-state: running; animation-delay: 0s;">
+  <animate attributeName="fill" values="#00afff;#ffffff;#ffffff" keyTimes="0;0.08333333333333333;1" dur="1.2195121951219512s" repeatCount="indefinite" begin="0.6097560975609756s" calcMode="discrete" style="animation-play-state: running; animation-delay: 0s;"></animate>
+</rect>
+<!-- [ldio] generated by https://loading.io/ --></svg>

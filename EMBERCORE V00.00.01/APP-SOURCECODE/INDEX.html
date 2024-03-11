@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="EN-US">
+    <head>
+        <title> EMBERCORE - V00.00.01 </title>
+           
+        <!--
+        fonts.google.com - Orbitron
+        
+        font-family: "Orbitron", sans-serif
+        font-optical-sizing: auto
+        font-weight: 400-900
+        font-style: normal
+        -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet" />
+        
+        <!--
+        fonts.google.com Oswald
+        
+        font-family: "Oswald", sans-serif
+        font-optical-sizing: auto
+        font-weight: 200-700
+        font-style: normal
+        -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet" />
+
+        <!-- UICONS V2.1.0 // BOLD STRAIGHT -->
+        <link rel="stylesheet" type="text/css" href="./UICONS/UICONS-BOLD-STRAIGHT/css/uicons-bold-straight.css" />
+
+        <!-- FONTAWSOME REMOTE CDN -->
+        <script type="text/javascript" src="https://kit.fontawesome.com/db128eb237.js" crossorigin="anonymous"></script>
+        
+        <link rel="stylesheet" type="text/css" href="./STYLESHEET/DEFAULT.css" />
+        <link rel="stylesheet" type="text/css" href="./STYLESHEET/DEFAULT.css" />
+        <link rel="stylesheet" type="text/css" href="./STYLESHEET/DEFAULT.css" />
+        <link rel="stylesheet" type="text/css" href="./STYLESHEET/SCROLLBAR.css" />
+    </head>
+    <body lang="EN-US">
+        <window name="Window-SplashScreen" id="Window-SplashScreen" class="Window-SplashScreen">
+            <span name="SplashScreen-Title" id="SplashScreen-Title" class="SplashScreen-Title"> EMBERCORE </span>
+            <img src="./IMAGES/SPLASHSCREEN.svg" alt="" name="SplashScreen-Loader" id="SplashScreen-Loader" class="SplashScreen-Loader" />
+        </window>
+        
+        <window name="Window-MainContainer" id="Window-MainContainer" class="Window-MainContainer">
+            <container name="App-ContainerLeft" id="App-ContainerLeft" class="App-ContainerLeft">
+                <nav name="StartMenu-Container" id="StartMenu-Container" class="StartMenu-Container">
+                    <button name="StartMenu-Button" id="StartMenu-Button1" class="StartMenu-Button">
+                        <span name="StartMenu-ButtonText" id="StartMenu-ButtonText" class="StartMenu-ButtonText"> HOME </span>
+                        <i name="StartMenu-ButtonIcon" id="StartMenu-ButtonIcon" class="fa-solid fa-house"></i>
+                    </button>
+                    <button name="StartMenu-Button" id="StartMenu-Button2" class="StartMenu-Button">
+                        <span name="StartMenu-ButtonText" id="StartMenu-ButtonText" class="StartMenu-ButtonText"> USER </span>
+                        <i name="StartMenu-ButtonIcon" id="StartMenu-ButtonIcon" class="fa-solid fa-circle-user"></i>
+                    </button>
+                    <button name="StartMenu-Button" id="StartMenu-Button3" class="StartMenu-Button">
+                        <span name="StartMenu-ButtonText" id="StartMenu-ButtonText" class="StartMenu-ButtonText"> TOOLS </span>
+                        <i name="StartMenu-ButtonIcon" id="StartMenu-ButtonIcon" class="fa-solid fa-gear"></i>
+                    </button>
+                </nav>
+                <div name="StartMenu-Wrapper1" id="StartMenu-Wrapper1" class="StartMenu-Wrapper1">
+                    Wrapper 1
+                </div>
+                <div name="StartMenu-Wrapper2" id="StartMenu-Wrapper2" class="StartMenu-Wrapper2">
+                    Wrapper 2
+                </div>
+                <div name="StartMenu-Wrapper3" id="StartMenu-Wrapper3" class="StartMenu-Wrapper3">
+                    Wrapper 3
+                </div>
+            </container>
+            
+            <container name="App-ContainerRight" id="App-ContainerRight" class="App-ContainerRight">
+                <nav name="MainMenu-Container" id="MainMenu-Container" class="MainMenu-Container">
+                    <button name="MainMenu-IconBTN" id="MainMenu-IconBTN" class="MainMenu-IconBTN">
+                        <img src="./IMAGES/MAINMENU-ICON.svg" alt="" name="MainMenu-Icon" id="MainMenu-Icon" class="MainMenu-Icon" />
+                    </button>
+                    <span name="MainMenu-Title" id="MainMenu-Title" class="MainMenu-Title"> EMBERCORE </span>
+                    <span name="MainMenu-Version" id="MainMenu-Version" class="MainMenu-Version"> V00.00.01 </span>
+                    <div name="MainMenu-Controls" id="MainMenu-Controls" class="MainMenu-Controls">
+                        <button name="MainMenu-ClsBTN" id="MainMenu-ClsBTN" class="MainMenu-ClsBTN" onclick="window.close()"> CLS </button>
+                        <!--<button name="MainMenu-SearchBTN" id="MainMenu-SearchBTN" class="MainMenu-SearchBTN">
+                            <img src="./IMAGES/OPENSEARCH-ICON.svg" alt="" name="MainMenu-SearchIcon" id="MainMenu-SearchIcon" class="MainMenu-SearchIcon" />
+                        </button>-->
+                    </div>
+                </nav>
+                <form name="SearchForm-Container" id="SearchForm-Container" class="SearchForm-Container">
+                    <input type="text" placeholder="SEARCH & COMMANDS" onkeyup="filterFunction()" name="SearchForm-Search" id="SearchForm-Search" class="SearchForm-Search" />
+                    <!--<button name="SearchForm-Submit" id="SearchForm-Submit" class="SearchForm-Submit" disabled> SUBMIT </button>-->
+                </form>
+                <div name="AppsList-Container" id="AppsList-Container" class="AppsList-Container">
+                    <ul name="PortApps-List" id="PortApps-List" class="PortApps-List">
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-brands fa-dev"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText"> ANDROID STUDIO </a>
+                        </li>
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-solid fa-globe"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText"> BEAKER BROWSER </a>
+                        </li>
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-solid fa-globe"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText"> BRAVE </a>
+                        </li>
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-solid fa-message"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText"> CAPRINE </a>
+                        </li>
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-solid fa-screwdriver-wrench"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText"> CRYPTOMATER </a>
+                        </li>
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-brands fa-dev"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText"> DBEAVER </a>
+                        </li>
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-solid fa-message"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText"> DISCORD </a>
+                        </li>
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-solid fa-message"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText"> DISCORD PTB </a>
+                        </li>
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-solid fa-film"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText"> DRAW.IO </a>
+                        </li>
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-solid fa-message"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText"> ELEMENT </a>
+                        </li>
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-solid fa-film"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText"> EMBY THEATER </a>
+                        </li>
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-solid fa-message"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText"> FRANZ </a>
+                        </li>
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-solid fa-screwdriver-wrench"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText"> GNUPG </a>
+                        </li>
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-solid fa-film"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText"> HANDBREAK </a>
+                        </li>
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-brands fa-dev"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText"> HOSTMAN </a>
+                        </li>
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-brands fa-dev"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText"> INNO SETUP </a>
+                        </li>
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-brands fa-dev"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText"> INSOMNIA </a>
+                        </li>
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-brands fa-dev"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText">INTELLIJ IDEA COM </a>
+                        </li>
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-brands fa-dev"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText"> UNTELLIJ IDEA ULT </a>
+                        </li>
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-solid fa-screwdriver-wrench"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText"> KITTY </a>
+                        </li>
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-solid fa-message"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText"> MIRC </a>
+                        </li>
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-solid fa-film"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText"> MOLOTOV </a>
+                        </li>
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-solid fa-screwdriver-wrench"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText"> M REMOTE NG </a>
+                        </li>
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-solid fa-cloud"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText"> NEXT CLOUD </a>
+                        </li>
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-solid fa-screwdriver-wrench"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText"> OPEN VPN </a>
+                        </li>
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-brands fa-dev"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText"> ORACLE JDK </a>
+                        </li>
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-solid fa-globe"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText"> PHYROX DEV </a>
+                        </li>
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-solid fa-globe"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText"> PHYROX ESR </a>
+                        </li>
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-solid fa-globe"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText"> PHYROX PORT </a>
+                        </li>
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-brands fa-dev"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText"> POSTMAN </a>
+                        </li>
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-solid fa-cloud"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText"> QBITTORRENT </a>
+                        </li>
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-solid fa-desktop"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText"> RAMBOX </a>
+                        </li>
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-solid fa-message"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText"> ROCKET CHAT </a>
+                        </li>
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-solid fa-message"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText"> SIGNAL </a>
+                        </li>
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-solid fa-message"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText"> SKYPE </a>
+                        </li>
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-brands fa-dev"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText"> SMARTGIT </a>
+                        </li>
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-solid fa-message"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText"> STORMHEN </a>
+                        </li>
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-solid fa-screwdriver-wrench"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText"> TABBY </a>
+                        </li>
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-solid fa-message"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText"> TEAMSPEAK </a>
+                        </li>
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-solid fa-cloud"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText"> TRANSMISSION </a>
+                        </li>
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-solid fa-desktop"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText"> UELI APP </a>
+                        </li>
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-solid fa-globe"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText"> UNGOOGLED CHROMIUM </a>
+                        </li>
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-solid fa-film"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText"> VLC PLAYER </a>
+                        </li>
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-brands fa-dev"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText"> VSCODE </a>
+                        </li>
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-brands fa-dev"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText"> VSCODIUM </a>
+                        </li>
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-brands fa-dev"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText"> WATERFOX </a>
+                        </li>
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-solid fa-message"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText"> WHATSAPP </a>
+                        </li>
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-solid fa-screwdriver-wrench"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText"> WIRE </a>
+                        </li>
+                        <li name="PortApps-Button" id="PortApps-Button" class="PortApps-Button">
+                            <i name="PortApps-ButtonIcon" id="PortApps-ButtonIcon" class="fa-solid fa-screwdriver-wrench"></i>
+                            <a name="PortApps-ButtonText" id="PortApps-ButtonText" class="PortApps-ButtonText"> WIRESHARK </a>
+                        </li>
+                    </ul>
+                    <span name="AppsList-Spacer" id="AppsList-Spacer" class="AppsList-Spacer"></span>
+                </div>
+                <div name="SystemApps-Container" id="SystemApps-Container" class="SystemApps-Container">
+                    <button name="SystemApps-Button" id="SystemApps-Button" class="SystemApps-Button">
+                        <i name="SystemApps-ButtonIcon" id="SystemApps-ButtonIcon" class="fa-solid fa-download"></i>
+                        <span name="SystemApps-ButtonText" id="SystemApps-ButtonText" class="SystemApps-ButtonText"> DOWNLOADS </span>
+                    </button>
+                    <button name="SystemApps-Button" id="SystemApps-Button" class="SystemApps-Button">
+                        <i name="SystemApps-ButtonIcon" id="SystemApps-ButtonIcon" class="fa-solid fa-folder"></i>
+                        <span name="SystemApps-ButtonText" id="SystemApps-ButtonText" class="SystemApps-ButtonText"> DOCUMENTS </span>
+                    </button>
+                    <button name="SystemApps-Button" id="SystemApps-Button" class="SystemApps-Button">
+                        <i name="SystemApps-ButtonIcon" id="SystemApps-ButtonIcon" class="fa-solid fa-image"></i>
+                        <span name="SystemApps-ButtonText" id="SystemApps-ButtonText" class="SystemApps-ButtonText"> PICTURES </span>
+                    </button>
+                    <button name="SystemApps-Button" id="SystemApps-Button" class="SystemApps-Button">
+                        <i name="SystemApps-ButtonIcon" id="SystemApps-ButtonIcon" class="fa-solid fa-music"></i>
+                        <span name="SystemApps-ButtonText" id="SystemApps-ButtonText" class="SystemApps-ButtonText"> MUSIC </span>
+                    </button>
+                    <button name="SystemApps-Button" id="SystemApps-Button" class="SystemApps-Button">
+                        <i name="SystemApps-ButtonIcon" id="SystemApps-ButtonIcon" class="fa-solid fa-video"></i>
+                        <span name="SystemApps-ButtonText" id="SystemApps-ButtonText" class="SystemApps-ButtonText"> VIDEOS </span>
+                    </button>
+
+                    <span name="SystemApps-Spacer" id="SystemApps-Spacer" class="SystemApps-Spacer"></span>
+
+                    <button name="SystemApps-Button" id="SystemApps-Button" class="SystemApps-Button">
+                        <i name="SystemApps-ButtonIcon" id="SystemApps-ButtonIcon" class="fa-solid fa-calculator"></i>
+                        <span name="SystemApps-ButtonText" id="SystemApps-ButtonText" class="SystemApps-ButtonText"> CALCULATOR </span>
+                    </button>
+                    <button name="SystemApps-Button" id="SystemApps-Button" class="SystemApps-Button">
+                        <i name="SystemApps-ButtonIcon" id="SystemApps-ButtonIcon" class="fa-solid fa-terminal"></i>
+                        <span name="SystemApps-ButtonText" id="SystemApps-ButtonText" class="SystemApps-ButtonText"> TERMINAL </span>
+                    </button>
+                    <button name="SystemApps-Button" id="SystemApps-Button" class="SystemApps-Button">
+                        <i name="SystemApps-ButtonIcon" id="SystemApps-ButtonIcon" class="fa-solid fa-folder"></i>
+                        <span name="SystemApps-ButtonText" id="SystemApps-ButtonText" class="SystemApps-ButtonText"> EXPLORER </span>
+                    </button>
+                    <button name="SystemApps-Button" id="SystemApps-Button" class="SystemApps-Button">
+                        <i name="SystemApps-ButtonIcon" id="SystemApps-ButtonIcon" class="fa-solid fa-pen"></i>
+                        <span name="SystemApps-ButtonText" id="SystemApps-ButtonText" class="SystemApps-ButtonText"> EDITOR </span>
+                    </button>
+                    <button name="SystemApps-Button" id="SystemApps-Button" class="SystemApps-Button">
+                        <i name="SystemApps-ButtonIcon" id="SystemApps-ButtonIcon" class="fa-brands fa-firefox-browser"></i>
+                        <span name="SystemApps-ButtonText" id="SystemApps-ButtonText" class="SystemApps-ButtonText"> BROWSER </span>
+                    </button>
+                </div>
+            </container>
+        </window>
+        
+        <script type="text/javascript" src="./JAVASCRIPT/MAIN.js"></script>
+        <script type="text/javascript" src="./JAVASCRIPT/MAIN.js"></script>
+        <script type="text/javascript" src="./JAVASCRIPT/MAIN.js"></script>
+        <script type="text/javascript" src="./JAVASCRIPT/MAIN.js"></script>
+    </body>
+</html>
